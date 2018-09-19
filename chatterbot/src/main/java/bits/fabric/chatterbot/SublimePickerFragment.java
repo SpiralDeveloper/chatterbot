@@ -1,4 +1,4 @@
-package chatterbot.app.bits.fabric.chatterbot;
+package bits.fabric.chatterbot;
 
 /**
  * Created by Ashish on 6/4/2017.

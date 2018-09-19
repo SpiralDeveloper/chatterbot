@@ -1,4 +1,4 @@
-package chatterbot.app.bits.fabric.chatterbot;
+package bits.fabric.chatterbot;
 
 import java.text.DateFormat;
 import java.text.ParseException;

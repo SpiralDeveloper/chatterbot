@@ -9,7 +9,7 @@ import fabric.bits.api.rdk.RdkManager;
 import fabric.bits.api.rdk.annotations.RLayout;
 
 
-public class MainActivity extends AppCompatActivity {
+public class ChatterTest extends AppCompatActivity {
 
 
 

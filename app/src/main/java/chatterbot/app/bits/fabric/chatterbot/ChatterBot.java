@@ -22,7 +22,6 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-import com.airbnb.lottie.L;
 import com.appeaser.sublimepickerlibrary.datepicker.SelectedDate;
 import com.appeaser.sublimepickerlibrary.helpers.SublimeOptions;
 import com.appeaser.sublimepickerlibrary.recurrencepicker.SublimeRecurrencePicker;
@@ -37,6 +36,8 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import bits.fabric.chatterbot.SublimePickerFragment;
+import bits.fabric.chatterbot.Time;
 import fabric.bits.api.rdk.RdkManager;
 import fabric.bits.api.rdk.annotations.RClick;
 import fabric.bits.api.rdk.annotations.RDefine;
@@ -44,7 +45,7 @@ import fabric.bits.api.rdk.annotations.RTextWatcher;
 import hani.momanii.supernova_emoji_library.Actions.EmojIconActions;
 import hani.momanii.supernova_emoji_library.Helper.EmojiconEditText;
 
-public class ChatterGround extends Fragment {
+public class ChatterBot extends Fragment {
 
     @RDefine(R.id.recyclerView)
     RecyclerView recyclerView;
@@ -85,13 +86,13 @@ public class ChatterGround extends Fragment {
         LinearLayoutManager ll = new LinearLayoutManager(getActivity());
         ll.setStackFromEnd(true);
         recyclerView.setLayoutManager(ll);
-        recyclerView.setAdapter(new TestAdapter());
-        ViewCompat.setNestedScrollingEnabled(recyclerView, false);
-
-
         editText.addTextChangedListener(searchTextWatcher);
         init();
+    }
 
+    public void setRecyclerViewAdapter(RecyclerView.Adapter adapter){
+        recyclerView.setAdapter(adapter);
+        ViewCompat.setNestedScrollingEnabled(recyclerView, false);
     }
 
 
