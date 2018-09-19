@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/simple_text_in_margin_top"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:elevation="1dp"
+        android:paddingBottom="@dimen/simple_text_in_padding_bottom"
+        android:paddingTop="@dimen/simple_text_in_padding_top"
+        android:text="Hey Jack, remind me to: Call Toanner, Ji afternone."
+        android:textColor="@color/black"
+        android:textSize="@dimen/simple_text_size" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="5dp"
+        android:text="11:22 pm"
+        android:textColor="@color/gray"
+        android:textSize="8sp" />
+
+</RelativeLayout>
