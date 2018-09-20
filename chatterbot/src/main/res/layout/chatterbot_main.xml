@@ -10,6 +10,7 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
+        android:id="@+id/nestedScroll"
         android:layout_above="@+id/footer"
         android:layout_height="wrap_content">
 
