@@ -36,4 +36,5 @@ dependencies {
     implementation 'com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.2'
     implementation 'com.airbnb.android:lottie:2.6.1'
     implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+    implementation 'com.github.Cutta:TagView:1.3'
 }

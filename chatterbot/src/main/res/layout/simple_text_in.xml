@@ -19,7 +19,7 @@
             android:layout_marginTop="@dimen/simple_text_in_margin_top"
             android:layout_marginLeft="10dp"
             android:paddingTop="10dp"
-            android:background="@color/gray_light"
+            android:background="#eef1f6"
             android:elevation="0.5dp"
             android:layout_toRightOf="@+id/imageView"
             android:paddingBottom="@dimen/simple_text_in_padding_bottom"

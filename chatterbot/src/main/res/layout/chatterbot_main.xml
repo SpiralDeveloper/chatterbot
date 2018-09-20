@@ -12,7 +12,31 @@
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:background="@color/white"
-        android:layout_height="?android:attr/actionBarSize">
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/navIcon"
+                android:layout_gravity="left"
+                android:src="@drawable/leftarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_gravity="left"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="Bitbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.Toolbar>
 
 
     </android.support.design.widget.AppBarLayout>
@@ -134,7 +158,6 @@
         </FrameLayout>
 
     </ViewFlipper>
-
 
 
     <HorizontalScrollView
