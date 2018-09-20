@@ -8,6 +8,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/contentPanel"
         android:text="Cool, have set ad reminder for you' you tommarow between 12pm-3pm"
         android:layout_width="wrap_content"
         android:textSize="@dimen/simple_text_size"
@@ -18,7 +19,6 @@
         android:background="#eef1f6"
         android:elevation="0.5dp"
         android:layout_toRightOf="@+id/imageView"
-        android:paddingBottom="@dimen/simple_text_in_padding_bottom"
         android:layout_marginRight="@dimen/simple_text_in_margin_right"
         android:paddingRight="@dimen/simple_text_in_padding_right"
         android:paddingLeft="@dimen/simple_text_in_padding_left"
@@ -48,19 +48,23 @@
             android:text="Button" />
 
 
-        <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView"
-        android:layout_below="@+id/tags"
-        android:layout_marginTop="5dp"
-        android:text="12:04 am"
-        android:textColor="@color/gray"
-        android:textSize="8sp" />
 
 
     </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contentPanel"
+        android:layout_below="@+id/contentPanel"
+        android:layout_marginTop="5dp"
+        android:text="12:04 am"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/gray"
+        android:textSize="8sp" />
+
 
 
     <!--<TextView-->
