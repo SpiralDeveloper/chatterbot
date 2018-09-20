@@ -30,9 +30,17 @@
             <TextView
                 android:id="@+id/toolbar_title"
                 android:layout_gravity="left"
-                android:textSize="12sp"
+                android:textSize="16sp"
                 android:textColor="@color/black"
-                android:text="Bitbi"
+                android:text="Bits Bot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/traskSkill"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:src="@drawable/trash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

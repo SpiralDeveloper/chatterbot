@@ -52,7 +52,7 @@
     <com.cunoraz.tagview.TagView
         android:id="@+id/tags"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignStart="@+id/textView"
         android:layout_marginRight="50dp"
         app:lineMargin="5dp"
