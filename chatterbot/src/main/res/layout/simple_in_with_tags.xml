@@ -34,6 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
         android:layout_below="@+id/tags"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="12:04 am"
         android:textColor="@color/gray"
         android:textSize="8sp" />
@@ -49,7 +51,7 @@
 
     <com.cunoraz.tagview.TagView
         android:id="@+id/tags"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
         android:layout_marginRight="50dp"
