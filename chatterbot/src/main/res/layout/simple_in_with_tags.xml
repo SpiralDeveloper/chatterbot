@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:orientation="vertical" android:layout_width="match_parent"
-
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content">
 
 
 
 
-    <TextView
-        android:id="@+id/textView"
+    <RelativeLayout
         android:text="Cool, have set ad reminder for you' you tommarow between 12pm-3pm"
         android:layout_width="wrap_content"
         android:textSize="@dimen/simple_text_size"
@@ -26,19 +22,69 @@
         android:layout_marginRight="@dimen/simple_text_in_margin_right"
         android:paddingRight="@dimen/simple_text_in_padding_right"
         android:paddingLeft="@dimen/simple_text_in_padding_left"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" >
 
-    <TextView
+        <TextView
+            android:id="@+id/textView"
+            android:text="Cool, have set ad reminder for you' you tommarow between 12pm-3pm"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/simple_text_size"
+            android:gravity="left"
+            android:layout_height="wrap_content" />
+
+        <com.plumillonforge.android.chipview.ChipView
+            android:id="@+id/tags"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/textView"
+            app:lineMargin="5dp"
+            app:tagMargin="5dp"
+            app:textPaddingLeft="8dp"
+            app:textPaddingTop="5dp"
+            android:layout_marginTop="5dp"
+            app:textPaddingRight="8dp"
+            app:textPaddingBottom="5dp"
+            android:layout_below="@+id/textView"
+            android:text="Button" />
+
+
+        <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
         android:layout_below="@+id/tags"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
         android:text="12:04 am"
         android:textColor="@color/gray"
         android:textSize="8sp" />
+
+
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:text="Cool, have set ad reminder for you' you tommarow between 12pm-3pm"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:textSize="@dimen/simple_text_size"-->
+        <!--android:gravity="left"-->
+        <!--android:layout_marginTop="@dimen/simple_text_in_margin_top"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:background="#eef1f6"-->
+        <!--android:elevation="0.5dp"-->
+        <!--android:layout_toRightOf="@+id/imageView"-->
+        <!--android:paddingBottom="@dimen/simple_text_in_padding_bottom"-->
+        <!--android:layout_marginRight="@dimen/simple_text_in_margin_right"-->
+        <!--android:paddingRight="@dimen/simple_text_in_padding_right"-->
+        <!--android:paddingLeft="@dimen/simple_text_in_padding_left"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+
+
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
@@ -49,20 +95,7 @@
         android:layout_height="30dp"
         />
 
-    <com.cunoraz.tagview.TagView
-        android:id="@+id/tags"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginRight="50dp"
-        app:lineMargin="5dp"
-        app:tagMargin="5dp"
-        app:textPaddingLeft="8dp"
-        app:textPaddingTop="5dp"
-        app:textPaddingRight="8dp"
-        app:textPaddingBottom="5dp"
-        android:layout_below="@+id/textView"
-        android:text="Button" />
+
 
 
 </RelativeLayout>
