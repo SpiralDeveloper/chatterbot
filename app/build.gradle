@@ -27,6 +27,9 @@ dependencies {
     implementation 'com.github.SpiralDeveloper:Rdk:0.1.5'
     implementation 'com.github.SpiralDeveloper:ext-Android-Speech-Recognition:0.0.1'
     implementation project(':chatterbot')
+
+
+
     implementation 'com.appeaser.sublimepickerlibrary:sublimepickerlibrary:2.1.2'
     implementation 'com.airbnb.android:lottie:2.6.1'
     implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
