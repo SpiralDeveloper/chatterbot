@@ -7,12 +7,11 @@
     android:orientation="vertical">
 
 
-
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:background="@drawable/app_bar_layout"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_bar_layout">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -22,19 +21,20 @@
 
             <TextView
                 android:id="@+id/toolbar_title"
-                android:layout_gravity="left"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:text="Bits Bot"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Bits Bot"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
             <ImageView
-                android:visibility="gone"
                 android:id="@+id/trashSkill"
-                android:src="@drawable/microphone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/trash"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.Toolbar>
@@ -44,10 +44,10 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_below="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/footer"
+        android:layout_below="@+id/appbar"
         android:overScrollMode="never">
 
     </android.support.v7.widget.RecyclerView>
@@ -56,8 +56,8 @@
     <ViewFlipper
         android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_above="@+id/scrollView"
         android:layout_height="50dp"
+        android:layout_above="@+id/scrollView"
 
         android:background="@color/white">
 
@@ -161,6 +161,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
@@ -168,12 +169,12 @@
 
             <com.airbnb.lottie.LottieAnimationView
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="1px"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                android:layout_marginTop="1px"
-                app:lottie_rawRes="@raw/ball_stretch"
-                android:layout_height="wrap_content" />
+                app:lottie_rawRes="@raw/kewl" />
 
         </FrameLayout>
 
@@ -182,16 +183,15 @@
 
     <HorizontalScrollView
         android:id="@+id/scrollView"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
         <LinearLayout
             android:id="@+id/containerView"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
 
     </HorizontalScrollView>
 
