@@ -15,11 +15,11 @@
         android:gravity="left"
         android:layout_marginTop="@dimen/simple_text_in_margin_top"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/simple_text_in_margin_right"
         android:paddingTop="10dp"
         android:background="#eef1f6"
         android:elevation="0.5dp"
         android:layout_toRightOf="@+id/imageView"
-        android:layout_marginRight="20dp"
         android:paddingRight="@dimen/simple_text_in_padding_right"
         android:paddingLeft="@dimen/simple_text_in_padding_left"
         android:layout_height="wrap_content" >
