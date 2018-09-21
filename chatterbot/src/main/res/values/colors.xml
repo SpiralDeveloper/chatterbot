@@ -14,4 +14,10 @@
     <color name="color3">#eeaa10</color>
     <color name="color4">#3164d7</color>
     <color name="color5">#2e9641</color>
+
+
+
+    <color name="toolbar_start_color">#5f1165</color>
+    <color name="toolbar_end_color">#9f1045</color>
+    <color name="toolbar_shadow">#33222222</color>
 </resources>
