@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/textView"
             android:layout_marginBottom="5dp"
+            app:flRowSpacing="5dp"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/textView"
            />

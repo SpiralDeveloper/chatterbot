@@ -29,6 +29,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/trashSkill"
+                android:src="@drawable/trash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
 
         </android.support.v7.widget.Toolbar>
 
@@ -154,7 +161,19 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
 
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_marginTop="1px"
+                app:lottie_rawRes="@raw/kewl"
+                android:layout_height="wrap_content" />
 
         </FrameLayout>
 
