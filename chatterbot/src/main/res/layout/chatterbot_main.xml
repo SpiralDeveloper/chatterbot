@@ -160,7 +160,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
@@ -172,7 +172,7 @@
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 android:layout_marginTop="1px"
-                app:lottie_rawRes="@raw/kewl"
+                app:lottie_rawRes="@raw/ball_stretch"
                 android:layout_height="wrap_content" />
 
         </FrameLayout>
