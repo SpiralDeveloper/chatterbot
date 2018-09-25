@@ -51,21 +51,42 @@
 
 
 
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignStart="@+id/contentPanel"
+        app:cardCornerRadius="20dp"
+        android:layout_height="40dp">
 
 
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/thumnail"
-            android:layout_marginTop="5dp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
             android:layout_alignStart="@+id/contentPanel"
-            android:layout_marginBottom="5dp"
-            android:layout_below="@+id/textView3"
-            android:src="@drawable/demo_thum"
-            android:layout_width="160dp"
-            app:riv_corner_radius="10dp"
+            android:layout_below="@+id/contentPanel"
+            android:text="Click the record button to start.."
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_marginRight="60dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:layout_width="60dp"
             android:scaleType="centerCrop"
-            android:layout_height="100dp"
+            android:src="@drawable/demo_thum"
+            android:layout_gravity="end"
+            android:layout_height="40dp"
+
             />
 
+
+    </android.support.v7.widget.CardView>
 
 
 

@@ -37,4 +37,5 @@ dependencies {
     implementation 'com.airbnb.android:lottie:2.6.1'
     implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
     implementation 'com.nex3z:flow-layout:1.2.2'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 }
