@@ -30,18 +30,9 @@
             android:textSize="@dimen/simple_text_size"
             android:gravity="left"
             android:layout_height="wrap_content" />
-
-        <VideoView
-            android:id="@+id/simpleVideoView"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_width="wrap_content"
-            android:layout_below="@+id/textView"
-            android:layout_height="100dp" />
-
-
-
     </RelativeLayout>
+
+
 
 
     <TextView
@@ -56,6 +47,30 @@
         android:textColor="@color/gray"
         android:textSize="8sp" />
 
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contentPanel"
+        android:layout_alignEnd="@+id/contentPanel"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/thumnail"
+            android:src="@drawable/demo_thum"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_height="100dp"
+            />
+
+    </android.support.v7.widget.CardView>
 
 
 
