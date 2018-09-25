@@ -31,17 +31,14 @@
             android:gravity="left"
             android:layout_height="wrap_content" />
 
-        <com.nex3z.flowlayout.FlowLayout
-            android:id="@+id/tags"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView"
-            android:layout_marginBottom="5dp"
-            app:flRowSpacing="5dp"
-            app:flChildSpacing="5dp"
+        <VideoView
+            android:id="@+id/simpleVideoView"
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
             android:layout_below="@+id/textView"
-           />
+            android:layout_height="100dp" />
+
 
 
     </RelativeLayout>
