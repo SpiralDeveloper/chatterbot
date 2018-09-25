@@ -52,19 +52,33 @@
 
 
 
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/contentPanel"
+        android:layout_height="100dp">
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/thumnail"
             android:layout_marginTop="5dp"
-            android:layout_alignStart="@+id/contentPanel"
             android:layout_marginBottom="5dp"
-            android:layout_below="@+id/textView3"
-            android:src="@drawable/demo_thum"
             android:layout_width="160dp"
             app:riv_corner_radius="10dp"
             android:scaleType="centerCrop"
             android:layout_height="100dp"
             />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:src="@drawable/play_button"
+            android:padding="35dp"
+            android:background="#80000000"
+            app:riv_corner_radius="10dp"
+            android:layout_width="160dp"
+            android:layout_height="100dp" />
+
+    </FrameLayout>
+
+
 
 
 
