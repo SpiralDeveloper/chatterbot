@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
 
     <RelativeLayout
         android:id="@+id/contentPanel"
         android:layout_width="wrap_content"
-        android:textSize="@dimen/simple_text_size"
-        android:gravity="left"
-        android:layout_marginTop="@dimen/simple_text_in_margin_top"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="@dimen/simple_text_in_margin_right"
-        android:paddingTop="10dp"
+        android:layout_marginTop="@dimen/simple_text_in_margin_top"
+        android:layout_toRightOf="@+id/imageView"
         android:background="#eef1f6"
         android:elevation="0.5dp"
+        android:gravity="left"
         android:paddingBottom="10dp"
-        android:layout_toRightOf="@+id/imageView"
-        android:paddingRight="@dimen/simple_text_in_padding_right"
         android:paddingLeft="@dimen/simple_text_in_padding_left"
-        android:layout_height="wrap_content" >
+        android:paddingRight="@dimen/simple_text_in_padding_right"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/simple_text_size">
 
         <TextView
             android:id="@+id/textView"
-            android:text="Cool, have set ad reminder"
             android:layout_width="wrap_content"
-            android:textSize="@dimen/simple_text_size"
+            android:layout_height="wrap_content"
             android:gravity="left"
-            android:layout_height="wrap_content" />
+            android:text="Cool, have set ad reminder"
+            android:textSize="@dimen/simple_text_size" />
     </RelativeLayout>
-
-
 
 
     <TextView
@@ -42,59 +39,62 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/contentPanel"
         android:layout_below="@+id/contentPanel"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="5dp"
         android:text="12:04 am"
-        android:layout_marginBottom="10dp"
         android:textColor="@color/gray"
         android:textSize="8sp" />
 
 
-
-
-
-    <FrameLayout
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/thumnail"
         android:layout_width="160dp"
-        android:layout_below="@+id/textView3"
+        android:layout_height="100dp"
         android:layout_alignStart="@+id/contentPanel"
-        android:layout_height="100dp">
-
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/thumnail"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_width="160dp"
-            app:riv_corner_radius="10dp"
-            android:scaleType="centerCrop"
-            android:layout_height="100dp"
-            />
-
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:src="@drawable/play_button"
-            android:padding="35dp"
-            android:background="#80000000"
-            app:riv_corner_radius="10dp"
-            android:layout_width="160dp"
-            android:layout_height="100dp" />
-
-    </FrameLayout>
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/demo_thum"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp" />
 
 
 
 
 
 
+
+    <View
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/contentPanel"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner"
+        android:scaleType="centerCrop" />
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/contentPanel"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="5dp"
+        android:padding="60dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/play_button"
+        android:scaleType="centerCrop"
+        />
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
         android:layout_width="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/placeholder"
         android:layout_height="30dp"
-        />
-
-
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/placeholder" />
 
 
 </RelativeLayout>
