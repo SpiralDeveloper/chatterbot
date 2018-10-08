@@ -11,22 +11,30 @@
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/app_bar_layout">
+        android:background="@color/white">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="36dp">
+            android:layout_height="?attr/actionBarSize">
+
 
 
             <TextView
                 android:id="@+id/toolbar_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:layout_gravity="left"
                 android:text="Bits Bot"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnersDrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
             <ImageView
                 android:id="@+id/trashSkill"
