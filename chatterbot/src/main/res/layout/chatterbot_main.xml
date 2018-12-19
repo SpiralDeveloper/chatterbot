@@ -27,14 +27,9 @@
                 android:visibility="gone"
                 android:layout_gravity="left"
                 android:text="Bits Bot"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <Spinner
-                android:id="@+id/spinnersDrop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
 
             <ImageView
                 android:id="@+id/trashSkill"

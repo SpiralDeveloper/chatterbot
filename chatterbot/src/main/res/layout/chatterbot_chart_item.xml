@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-</LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/simple_text_size"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/simple_text_in_margin_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/simple_text_in_margin_right"
+        android:paddingTop="10dp"
+        android:background="#eef1f6"
+        android:elevation="0.5dp"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingRight="@dimen/simple_text_in_padding_right"
+        android:paddingLeft="@dimen/simple_text_in_padding_left"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="Cool, have set ad reminder"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/simple_text_size"
+            android:gravity="left"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contentPanel"
+        android:layout_below="@+id/contentPanel"
+        android:layout_marginTop="5dp"
+        android:text="12:04 am"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/gray"
+        android:textSize="8sp" />
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/contentPanel"
+        app:cardCornerRadius="2dp"
+        android:layout_height="180dp">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/item_bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/placeholder"
+        android:layout_height="30dp"
+        />
+
+
+
+
+</RelativeLayout>
